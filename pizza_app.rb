@@ -38,5 +38,11 @@ def get_pizza_string(size, meats, veggies, extra_cheese)
     meats.each do |v|
         meats_string += "#{get_meats()[v]} "
     end
-    "#{size_string} #{meats_string}pizza"
+
+    veggie_string = ""
+    veggies.each do |v|
+        veggie_string += "#{get_veggies()[v]} "
+    end
+
+    "#{size_string} #{meats_string}#{veggie_string}pizza"
 end
