@@ -9,3 +9,7 @@ end
 def get_veggies()
     ["Peppers", "Onions", "Olives", "Pineapple"]
 end
+
+def get_pizza_price(size, meats, veggies, extra_cheese)
+    0
+end

@@ -35,7 +35,7 @@ class TestPizzaApp < Minitest::Test
         assert_equal("Peppers", get_veggies()[0])
     end
 
-    def test_get_pizza_price
+    def test_empty_pizza_costs_0
         assert_equal(0, get_pizza_price('', [], [], false))
     end
 end
