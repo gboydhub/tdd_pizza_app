@@ -21,5 +21,7 @@ def get_pizza_price(size, meats, veggies, extra_cheese)
     veggies.each do |v|
         price += 0.50
     end
+
+    if extra_cheese; price += 1.00; end
     price
 end
