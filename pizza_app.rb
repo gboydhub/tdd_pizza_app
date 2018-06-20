@@ -27,5 +27,11 @@ def get_pizza_price(size, meats, veggies, extra_cheese)
 end
 
 def get_pizza_string(size, meats, veggies, extra_cheese)
-    "No pizza"
+    size_string = ""
+    unless get_sizes().has_key?(size)
+        size_string = "No"
+    else
+        size_string = size
+    end
+    "#{size_string} pizza"
 end
