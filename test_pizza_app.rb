@@ -58,4 +58,8 @@ class TestPizzaApp < Minitest::Test
     def test_medium_pepperoni_onion_exchs_pizza_is_12_25
         assert_equal(12.25, get_pizza_price('Medium', [0], [1], true))
     end
+
+    def test_empty_pizza_string_returns_no_pizza
+        assert_equal("No pizza", get_pizza_string('', [], [], false))
+    end
 end
