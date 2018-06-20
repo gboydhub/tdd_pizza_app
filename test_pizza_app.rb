@@ -9,4 +9,8 @@ class TestPizzaApp < Minitest::Test
     def test_size_is_hash
         assert_equal(Hash, get_sizes().class)
     end
+
+    def test_small_is_8_00
+        assert_equal(8.00, get_sizes()['Small'])
+    end
 end
