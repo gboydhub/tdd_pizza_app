@@ -3,9 +3,9 @@ def get_sizes()
 end
 
 def get_meats()
-    ["Pepperoni", "Ham", "Bacon"]
+    ["Pepperoni", "Ham", "Bacon", "Chicken"]
 end
 
 def get_veggies()
-    []
+    ["Peppers", "Onions", "Olives", "Pineapple"]
 end
