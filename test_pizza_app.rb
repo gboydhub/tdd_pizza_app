@@ -30,4 +30,8 @@ class TestPizzaApp < Minitest::Test
     def test_veggies_is_array
         assert_equal(Array, get_veggies().class)
     end
+
+    def test_veggies_has_data
+        assert_equal("Peppers", get_veggies()[0])
+    end
 end
