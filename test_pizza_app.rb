@@ -78,4 +78,8 @@ class TestPizzaApp < Minitest::Test
     def test_small_exchs_pizza_string_is_correct
         assert_equal("Small pizza with Extra cheese", get_pizza_string('Small', [], [], true))
     end
+
+    def test_complicated_pizza_string
+        assert_equal("Medium Pepperoni Bacon Pineapple pizza with Extra cheese", get_pizza_string('Medium', [0, 2],[3], true))
+    end
 end
