@@ -66,4 +66,8 @@ class TestPizzaApp < Minitest::Test
     def test_small_pizza_returns_small_pizza
         assert_equal("Small pizza", get_pizza_string('Small', [], [], false))
     end
+
+    def test_small_pep_pizza_string_is_correct
+        assert_equal("Small Pepperoni pizza", get_pizza_string('Small', [0], [], false))
+    end
 end
