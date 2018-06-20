@@ -5,3 +5,7 @@ end
 def get_meats()
     ["Pepperoni", "Ham", "Bacon"]
 end
+
+def get_veggies()
+    []
+end
