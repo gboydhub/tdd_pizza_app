@@ -42,4 +42,8 @@ class TestPizzaApp < Minitest::Test
     def test_small_empty_pizza_is_8_00
         assert_equal(8.00, get_pizza_price('Small', [], [], false))
     end
+    
+    def test_small_pepperoni_pizza_is_8_75
+        assert_equal(8.75, get_pizza_price('Small', [0], [], false))
+    end
 end
