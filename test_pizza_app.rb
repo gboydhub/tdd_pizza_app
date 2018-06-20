@@ -13,4 +13,9 @@ class TestPizzaApp < Minitest::Test
     def test_small_is_8_00
         assert_equal(8.00, get_sizes()['Small'])
     end
+
+    def test_other_sizes
+        assert_equal(10.00, get_sizes()['Medium'])
+        assert_equal(12.00, get_sizes()['Large'])
+    end
 end
