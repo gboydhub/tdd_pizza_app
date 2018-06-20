@@ -44,5 +44,8 @@ def get_pizza_string(size, meats, veggies, extra_cheese)
         veggie_string += "#{get_veggies()[v]} "
     end
 
-    "#{size_string} #{meats_string}#{veggie_string}pizza"
+    pizza_string = "#{size_string} #{meats_string}#{veggie_string}pizza"
+    if extra_cheese; pizza_string += " with Extra cheese"; end
+
+    pizza_string
 end
