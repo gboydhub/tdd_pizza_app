@@ -34,4 +34,8 @@ class TestPizzaApp < Minitest::Test
     def test_veggies_has_data
         assert_equal("Peppers", get_veggies()[0])
     end
+
+    def test_get_pizza_price
+        assert_equal(0, get_pizza_price('', [], [], false))
+    end
 end
