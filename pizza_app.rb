@@ -11,5 +11,6 @@ def get_veggies()
 end
 
 def get_pizza_price(size, meats, veggies, extra_cheese)
-    0
+    unless get_sizes().has_key?(size); return 0; end
+    get_sizes()[size]
 end
