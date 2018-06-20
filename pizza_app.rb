@@ -25,3 +25,7 @@ def get_pizza_price(size, meats, veggies, extra_cheese)
     if extra_cheese; price += 1.00; end
     price
 end
+
+def get_pizza_string(size, meats, veggies, extra_cheese)
+    "No pizza"
+end
