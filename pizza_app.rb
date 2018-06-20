@@ -12,5 +12,10 @@ end
 
 def get_pizza_price(size, meats, veggies, extra_cheese)
     unless get_sizes().has_key?(size); return 0; end
-    get_sizes()[size]
+
+    price = get_sizes()[size]
+    meats.each do |v|
+        price += 0.75
+    end
+    price
 end
