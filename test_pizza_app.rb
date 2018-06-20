@@ -18,4 +18,8 @@ class TestPizzaApp < Minitest::Test
         assert_equal(10.00, get_sizes()['Medium'])
         assert_equal(12.00, get_sizes()['Large'])
     end
+
+    def test_meats_is_array
+        assert_equal(Array, get_meats().class)
+    end
 end
